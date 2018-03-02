@@ -8,7 +8,7 @@ LICENSE = "Apache-2.0"
 SECTION = "devel/python"
 LIC_FILES_CHKSUM = "file://COPYING.txt;md5=3b83ef96387f14655fc854ddc3c6bd57"
 
-SRCREV = "${AUTOREV}"
+SRCREV = "7055ce4f4a095f0dc968a74d776a2258941e280a"
 
 # for now, prepopulate this in the downloads directory
 SRC_URI = "git://github.com/Wind-River/device-cloud-python.git"
