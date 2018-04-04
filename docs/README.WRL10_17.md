@@ -1,6 +1,3 @@
-How to use it in WRLinux 9
-======================
-
 Build it
 -----------
 $ /path/to/setup.sh --machines=intel-x86-64 --dl-layers
