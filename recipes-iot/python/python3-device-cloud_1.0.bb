@@ -3,10 +3,12 @@
 # License: MIT
 #
 # Python 3
-inherit setuptools3 update-rc.d systemd
+inherit setuptools update-rc.d systemd distro_features_check
 
 # pull in the user id details
 require device-cloud-user.inc
 
 # all details are in device-cloud-common.inc
 require device-cloud-common.inc
+
+CONFLICT_DISTRO_FEATURES_append = " openssl-no-weak-ciphers"

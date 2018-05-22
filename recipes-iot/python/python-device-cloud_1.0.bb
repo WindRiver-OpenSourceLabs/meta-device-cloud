@@ -3,7 +3,7 @@
 # License: MIT
 #
 # Python 2
-inherit setuptools update-rc.d systemd
+inherit setuptools update-rc.d systemd distro_features_check
 
 # pull in the user id details
 require device-cloud-user.inc
@@ -12,3 +12,5 @@ require device-cloud-user.inc
 require device-cloud-common.inc
 
 RDEPENDS_${PN} += "python-subprocess"
+
+CONFLICT_DISTRO_FEATURES_append = " openssl-no-weak-ciphers"
